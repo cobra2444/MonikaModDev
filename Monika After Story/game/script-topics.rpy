@@ -4821,7 +4821,18 @@ label monika_urgent:
     m 1j "I wish I could see the look on your face right now!"
     m 1k "I'm sure it's adorable~"
     return
-
+    
+  label monika_video_games
+      m 4d "Do you play alot of video games [player]."
+      menu:
+          
+          "yes."
+              m 4d "I'm fine with that as long as you don't play too many!"
+              m 1a "I want you to be able to see me when i finnaly get out of this place!"
+          "no."
+              m 1c "..."
+              m 1c "well you must atleast have one game [player]
+   return
 ##################
 #Incomplete ideas#
 ##################
