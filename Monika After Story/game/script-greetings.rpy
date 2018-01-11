@@ -364,7 +364,8 @@ label monikaroom_greeting_post:
     show monika 1 at ls32
     m 1a "What shall we do today, [player]?"
     python:
-        if persistent.current_track is not None:
+        if persistent.c
+        urrent_track is not None:
             play_song(persistent.current_track)
         else:
             play_song(songs.current_track) # default
@@ -372,3 +373,17 @@ label monikaroom_greeting_post:
         set_keymaps()
     return
 
+ label monika_asking_about_day
+     m 1b "hi [player] how have you been?"
+     menu:
+         m "have you had a good day?
+         
+         "yes.":
+             m 5ak "I'm so glad to hear it!"
+             m 4k "I'm so excited to spend my day with you, when I'm out of here that is!"
+             
+         "no.":
+              m 3f "What's wrong, you know you can tell me right?"
+              m 3f "please [player] if there is something up I can help you through it"
+          
+          
